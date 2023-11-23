@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #89C5CC;
+  --paragraph: #7D7987;
+  --link-color: #1F1534;
+  --button-color: #69B99D;
+  --button-hover-color: #4D8775;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  width: 100%;
+  padding: 64px;
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header-logo {
+  font-size: 22px;
+  color: var(--primary-color);
+}
+
+.header .header-navigation .navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+}
+
+.header .header-navigation .navigation-list .navigation-lit-item a {
+  font-size: 18px;
+  color: var(--link-color);
+}
+
+.header .header-navigation .navigation-list .navigation-lit-item a:hover {
+  color: var(--primary-color);
+}
+
+.header .header-navigation .navigation-list .navigation-lit-item:first-child a {
+  font-weight: bold;
+}
+
+.main {
+  width: 100%;
+  padding: 64px;
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .first-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  gap: 16px;
+}
+
+.main .first-section .section-title {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.main .first-section .section-title .strong-title {
+  color: var(--primary-color);
+}
+
+.main .first-section .section-description {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: var(--paragraph);
+}
+
+.main .first-section .section-button {
+  padding: 14px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: var(--button-color);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.main .first-section .section-button:hover {
+  background: var(--button-hover-color);
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 29px;
+}
